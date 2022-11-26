@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: white;
+    }
+</style>
+<script>
+    const chacgeColor = () =>{
+        document.body.style.backgroundColor = document.getElementById("color").value;;
+    }
+    const calc = () =>{
+         const num1 = Number(document.getElementById("num1").value)
+         const num2 = Number(document.getElementById("num2").value)
+         const operator = document.getElementById("operator").value
+         if(operator === '+'){
+            let sum = num1 + num2
+            test.innerHTML = sum}
+        if(operator === '-'  ){
+            let sum = num1 - num2
+            test.innerHTML = sum}
+        if(operator === '/' ){
+            let sum = num1 / num2
+            test.innerHTML = sum}
+        if(operator === '*' ){
+            let sum = num1 * num2
+            test.innerHTML = sum}
+            
+        }
+</script>
+<body>
+<input id='color'type="text">
+ <button onclick="chacgeColor()">to change backgrund</button><br>
+ number 1 : <input id="num1">
+ operator : <select id="operator">
+    <option>+</option>
+    <option>-</option>
+    <option>/</option>
+    <option>*</option>
+  </select>
+ number 2 : <input id="num2">
+ <div id="test" style="font-size: 70px;"></div>
+ <button onclick="calc()">sum</button> 
+
+</body>
+</html>
