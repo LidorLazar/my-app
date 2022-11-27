@@ -9,7 +9,7 @@ import Navbar from './Navbar';
 function App() {
   return (<div>
     {/* <Navbar/> */}
-    {/* <AxsiosStu/> */}
+    <AxsiosStu/>
     {/* <Stud/> */}
     {/* <PocketCalculator/> */}
     {/* <ComboBoxColor/> */}
